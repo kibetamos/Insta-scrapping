@@ -11,7 +11,7 @@ def index(request):
     if request.method == 'POST':
         github_user = request.POST['github_user']
         user = request.POST['user']
-        url = 'https://github.com/' + github_user
+        url = 'https://www.instagram.com/' + github_user
         r = requests.get(url)
         soup = bs(r.content)
         profile = soup.find('img', {'alt': 'Avatar'})['src']
@@ -26,7 +26,6 @@ def index(request):
         return redirect('/')
 
     return render(request, 'index.html')
-
 
 # def register(request):
 #     if request.method == 'POST':
