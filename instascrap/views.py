@@ -9,9 +9,9 @@ from .models import Instagram
 # Create your views here.
 def index(request):
     if request.method == 'POST':
-        github_user = request.POST['github_user']
+        insta_user = request.POST['insta_user']
         user = request.POST['user']
-        url = 'https://www.instagram.com/' + github_user
+        url = 'https://www.instagram.com/' + insta_user
         r = requests.get(url)
         soup = bs(r.content)
         profile = soup.find('img', {'alt': 'Avatar'})['src']
