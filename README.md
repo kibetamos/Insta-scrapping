@@ -1,3 +1,3 @@
 # Insta-scrapping
 
-This is a python dja ngo projee that gets the users' profile images basing on their profiles 
+This is a python dja ngo project that gets the users' profile images basing on their profiles 
